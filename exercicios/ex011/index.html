@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+
+    <p>tente exibir esse site em vários dispositivos diferentes</p>
+
+<picture>
+    <source media="(max-width: 750px)" srcset="img/elden-pp.jpg" type="image/jpg">
+    <source media="(max-width: 1050px)" srcset="img/elden-p.jpg" type="image/jpg">
+    <source media="(max-width: 1250px)" srcset="img/elden-m.jpg" type="image/jpg">
+    <source media="(max-width: 1550px)" srcset="img/elden-mg.jpg" type="image/jpg">
+    <source media="(max-width: 1958px )" srcset="img/elden-g.jpg" type="image/jpg">
+    <img src="img/elden-gg.jpg" alt="imagem flexisivel">
+</picture>
+
+<h1>Resproduzindo áudios</h1>
+
+<p>
+    vamos aprende a reproduzir áudio
+</p>
+<audio src="midia/I Don't Think So (Original Speed) - The Soundlings.mp3" controls></audio>
+<!--MP3, wav e OGG esse são os formatos compativeis-->
+
+<audio preload="metadata" controls>
+    <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+    <source src="midia/guanacast-33.ogg" type="audio/ogg">
+    <source src="midia/guanacast-33.wav" type="audio/wav"><!--tentar evitar usar arquivo wav-->
+    <!--desse modo eu não fico limitado a usar só um tipo de áudio, posso colocar vários tipo, e se o navegador não carregar um tpo ele vai tentar outro, até conseguir-->
+    <p>Infelizmente seu navegador não consegui ridar o áudio clique <a href="midia/guanacast-33.mp3">aqui</a> para baixar seu arquivo mp3.</p>
+</audio>
+</body>
+</html>

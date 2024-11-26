@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+    <title>Formatação de textos</title>
+
+    <style>
+        mark {
+            background-color: rgb(127, 197, 255);
+        }
+    </style>
+    <!--assim, toda a marcação vai ter a mesma cor, mas assim só funciona em uma página, nas proximas a cor vai estar normal-->
+</head>
+
+<body>
+    <h1>Principais formatações</h1>
+
+    <h2>Negrito/Destaque</h2>
+
+    <p>
+        Nessa frase temos um <b>termo em negrito</b> usando a tag &LT;b&gt;
+        <!--A teg 'b' ela é uma tag não semántica, significa que ela na tem significado, só tem forma-->
+    </p>
+
+    <p>
+        Nessa frase temos um <strong>termo em destaque</strong> usando a tag &lt;strong&gt;
+        <!--nessa tag além de dar a forma que queremos para o termo, também damos sentido para ele
+        ele é um termo forte, um termo de destaque-->
+    </p>
+
+    <h2>Italico/Ênfase</h2>
+
+    <p>
+        Nesta frase temos um <i>termo em itálico</i> usando a tag &lt;i&gt;.<!--uma tag sem sentido-->
+    </p>
+
+    <p>
+        Nesta fraase temos um <EM>termo em ênfase</EM> usando a tag &LT;EM&gt;.<!--uma tag semantica, com sentido-->
+    </p>
+
+    <h2>Texto maracado</h2>
+
+    <p>
+        podemos também cria um <mark>trecho marcado</mark> usando a tag
+        &LT;mark&gt;
+        <!--esse método de mudar a cor do marcador é mais feito no CSS, mas quento é um techo muito especifico fazer assim é recomendado-->
+    </p>
+
+    <p>
+        E no outro parágrafo temos outro <mark>trecho marcado</mark> no final.
+        <!--mas a cor da marcação não é herdada do texto acima, para fazer isso termos que ir para cabeça-->
+    </p>
+
+    <h2>Texto grande e pequeno</h2>
+
+    <p>
+        Estamos criando um texto <big>grande</big>
+        <!--A tag big, já não pode mais ser usada, se eu quiser aumentar o tamanho de uma letra é melhor fazer isso no CSS.-->
+    </p>
+
+    <p>
+        EStamos criando um texto <small>pequeno</small>
+        <!--A tag small não caiu porque podemos dar sentido nas letras pequenas, tipo em um contrato, se tiver escrito leia as letras miudas, elas tem um sentido, um motivo para elas servirem. -->
+    </p>
+
+    <h2>texto deletado</h2>
+
+    <p>
+        Podemos marcar um <del>texto como excluido</del> para indicar que ele de ser lido, mas não considerado.
+        <!--risca o texto que foi escolhido-->
+    </p>
+
+    <p>
+        Podemos marcar um <ins>texto como inserido</ins> para dar uma ênfase e indicar que ele foi adicionado depois.
+        <!--sublinha o texto escolhido-->
+    </p>
+
+    <p>
+        Existe tamém o <u>texto sublinhado</u>usando a tag &LT;u&gt;(forma não semantica)
+    </p>
+
+    <h2>Texto sobrescrito</h2>
+
+    <p>
+        para inserir coisas do tipo 2<sup>20</sup>+3
+        <!--deixa o trecho selecionado para cima-->
+    </p>
+
+    <h2>Texto subescrito</h2>
+
+    <p>
+        para inserir coisas do tipo H<sub>2</sub>O
+        <!--deixa o trecho selecionado para baixo-->
+    </p>
+</body>
+
+</html>
